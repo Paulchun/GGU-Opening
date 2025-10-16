@@ -19,8 +19,9 @@
   },
   "scripts": {
     "lint": "eslint --fix src/**/*.ts",
-    "dev": "parcel index.html --port 1235",
-    "build": "parcel build index.html --public-url /roulette/"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "build:docs": "parcel build index.html --public-url ./ --dist-dir docs"
   },
   "dependencies": {
     "box2d-wasm": "^7.0.0"
